@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .nvb {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .collapseDiv {
+            justify-content: center;
+            align-items: center;
+
+            .list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 14px;
+            }
+
+        }
+
+        .headerIcon {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 14px;
+        }
+    }
+}
+main{
+    #madewell{
+        background-color: #F9F9F9;
+        text-align: center;
+        .madewellTxt{
+            margin-top: 40%;
+            h1{
+                letter-spacing: 4px;
+                color: #000;
+                font-size: 80px;
+                font-weight: 900;
+                font-style: normal;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            p{
+                color: #808080;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            .btnFirst,.btnSecond{
+                margin-top: 12%;
+                padding: 8px;
+            }
+            .btnFirst{
+                background-color: transparent;
+                color: #207DFF;
+                border-color: #207DFF;
+            }
+            .btnFirst:hover{
+                background-color: #207DFF;
+                color: #F9F9F9;
+                transition: 0.5s;
+            }
+            .btnSecond{
+                background-color: #207DFF;
+                color: #F9F9F9;
+                border-color: #207DFF;
+            }
+            .btnSecond:hover{
+                background-color: #F9F9F9;
+                color: #207DFF;
+                transition: 0.5s;
+            }
+        }
+        .madewellImg{
+            margin-top: 4%;
+            img{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+            }
+        }
+    }
+    #js{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        #load{
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            border: 0;
+        }
+        #load:hover{
+            background-color: #F9F9F9;
+            color: #000;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+        #card{
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 14px;
+            .cardList{
+                border-radius: 10px;
+                width: 200px;
+                border: 1px solid #000;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap-reverse;
+                flex-direction: column;
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    filter: brightness(66%);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    min-height: auto;
+                }
+                p{
+                    font-size: 30px;
+                    color: #207DFF;
+                    font-weight: 800;
+                }
+                h1{
+                    margin-bottom: 25px;
+                    color: #000;
+                    font-weight: 800;
+                    font-size: 20px;
+                }
+                .jsBtn{
+                    margin-bottom: 10px;
+                    .cardBtn,.wishlistBtn{
+                        padding: 4px;
+                    }
+                    .cardBtn{
+                        background-color: transparent;
+                        color: #207DFF;
+                        border-color: #207DFF;
+                    }
+                    .cardBtn:hover{
+                        background-color: #207DFF;
+                        color: #F9F9F9;
+                        transition: 0.5s;
+                    }
+                    .wishlistBtn{
+                        background-color: #207DFF;
+                        color: #F9F9F9;
+                        border-color: #207DFF;
+                    }
+                    .wishlistBtn:hover{
+                        background-color: #F9F9F9;
+                        color: #207DFF;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        #load{
+            margin-top: 5%;
+        }
+    }
+    #jacket{
+        margin-top: 5%;
+        background-color: #F9F9F9;
+        .jacketImg{
+            img{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 160%;
+                height: 100vh;
+            }
+        }
+        .jacketTxt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 10%;
+            margin-left: 10%;
+            p{
+                letter-spacing: 2px;
+                color: #000;
+                font-weight: 500;
+            }
+            h1{
+                font-size: 80px;
+                color: #000;
+                font-weight: 800;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .jacketBtn{
+                padding: 6px;
+                background-color: #000;
+                color: #F9F9F9;
+            }
+            .jacketBtn:hover{
+                background-color: #F9F9F9;
+                color: #000;
+                transition: 0.5s;
+            }
+        }
+    }
+    #collection{
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        .collectionTxt{
+            font-size: 16px;
+        }
+        .collectionCard{
+            border: 1px solid #8b8a8a;
+            width: 100%;
+            min-height: 150px;
+            img{
+                margin-top: 10px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+            }
+            img:hover{
+                width: 80%;
+                transition: 0.5s;
+            }
+            h1,p.h2{
+                margin-top: -40%;
+            }
+        }
+    }
+    #newDenimCoat{
+        margin-top: 5%;
+        text-align: center;
+        .newDenimCoatImg{
+            img{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 120%;
+                height: 100vh;
+            }
+        }
+        .newDenimCoatTxt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30%;
+            margin-left: 10%;
+            p{
+                letter-spacing: 2px;
+                color: #000;
+                font-weight: 500;
+            }
+            h1{
+                font-size: 80px;
+                color: #000;
+                font-weight: 800;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .newDenimCoatBtn{
+                padding: 6px;
+                background-color: #000;
+                color: #F9F9F9;
+            }
+            .newDenimCoatBtn:hover{
+                background-color: #F9F9F9;
+                color: #000;
+                transition: 0.5s;
+
+            }
+        }
+    }
+    #end{
+        margin-top: 5%;
+
+    }
+    #formSec{
+        margin-top: 5%;
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    span{
+        color: #207DFF;
+        cursor: pointer;
+    }
+    span:hover{
+        color: #13468d;
+        transition: 0.5s;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    main #madewell .madewellTxt h1{
+        font-size: 40px;
+    }
+    main #jacket .jacketImg img{
+        width: 100%;
+    }
+    main #jacket .jacketTxt p{
+        font-size: 12px;
+    }
+    header .nvb .headerIcon{
+        margin-left: 95px;
+        margin-top: 40px;
+    }
+    main #jacket .jacketTxt h1{
+        font-size: 60px;
+    }
+    main #newDenimCoat .newDenimCoatImg img{
+        width: 100%;
+    }
+    main #newDenimCoat .newDenimCoatTxt h1{
+        font-size: 60px;
+    }
+  }
+  @media only screen and (max-width: 1000px) and (min-width:601px){
+    main #jacket .jacketImg img{
+        width: 100%;
+    }
+    main #newDenimCoat .newDenimCoatImg img{
+        width: 100%;
+    }
+    main #jacket .jacketTxt{
+        text-align: center;
+    }
+    main #newDenimCoat .newDenimCoatTxt{
+        text-align: center;
+    }
+  }
